@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+}
+
+.card {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff0f3;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 77, 0.3);
+  padding: 30px;
+  color: #b0003a;
+  position: relative;
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.outside h1 {
+  font-size: 2.5em;
+  color: #ff004e;
+}
+
+.outside h3, .inside h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #880030;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.frames {
+  width: 250px;
+  margin: 10px;
+  background: #ffe3ec;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(255, 0, 77, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.frames:hover {
+  transform: scale(1.05);
+}
+
+.frames img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.frames p {
+  margin-top: 12px;
+  font-size: 1em;
+  color: #800020;
+  font-weight: 600;
+}
+
+.typing-text {
+  border-right: 2px solid #ff004e;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
